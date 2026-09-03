@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ui-ing
+spec:
+  ingressClassName: azure-application-gateway
+  rules:
+  - host: axion-ui.cloudpunk.shop
+    http:
+      paths:
+      - backend:
+          service:
+            name: axion-ui-ser
+            port:
+              number: 80
+        path: "/"
+        pathType: Prefix
+
+      

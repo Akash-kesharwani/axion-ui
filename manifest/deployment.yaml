@@ -1,1 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui-lab
+  template:
+    metadata:
+      labels:
+        app: ui-lab
+    spec:
+      containers:
+      - name: axion-ui
+        image: akacr1212134.azurecr.io/axion-ui:v1          
+        ports:
+        -  containePort: 8000
+        
+
 
