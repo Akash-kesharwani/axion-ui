@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: axion-ui
-        image: akacr1212134.azurecr.io/axion-ui:v1          
+        image: akacr1212134.azurecr.io/axion-ui:v3         
         ports:
         -  containePort: 8000
         
