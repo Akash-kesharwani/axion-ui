@@ -7,7 +7,7 @@ import { Throughput } from '../Throughput';
 import { DigitalTwin } from '../DigitalTwin';
 import { ThermalCamera } from '../ThermalCamera';
 
-const API_BASE = 'https://telemetry.cloudpunk.shop';
+const API_BASE = 'http://telemetry.cloudpunk.shop';
 
 interface DashboardViewProps {
   devices: any[];
