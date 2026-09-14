@@ -18,8 +18,7 @@ jobs:
       IMAGE_TAG: v1
       ACR_NAME: akacr1212134
       ACR_LOGIN_SERVER: akacr1212134.azurecr.io
-
-      
+  
     steps:
     - name: Checkout
       uses: actions/checkout@v5.0.0
@@ -27,9 +26,9 @@ jobs:
     - name: Azure Login
       uses: Azure/login@v2.3.0
       with:
-        client-id: 09feefba-07c4-4621-9e45-67141fc72038
-        tenant-id: 70215518-e920-4fbb-bce9-8e471101e454
-        subscription-id: fbb258e2-cd4d-4bd2-9c7d-a04b5cf93aaa
+        client-id: 124a393a-1bcd-4f1e-a82a-7aafb702c031
+        tenant-id: 7c23c5b4-ee12-4a85-a703-3cdda6279e4b
+        subscription-id: 34382dad-4d83-4e06-9eeb-c20a9624d946
 
     - name: Login to ACR
       run: |
